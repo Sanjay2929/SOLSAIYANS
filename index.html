@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solsaiyans</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="shortcut icon" href="./assets/img/png/fav.png" type="image/x-icon">
+    <!-- SLICK MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- SLICK THEME MIN JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="overflow-x-hidden">
+    <header class="her_bg_img d-flex  flex-column min-vh-100 z-n1 overflow-hidden">
+        <nav class=" position-relative z-3">
+            <div class="container py-3">
+                <div class="d-flex justify-content-between align-items-center py-4 ">
+                    <img class="animate__tada" src="./assets/img/png/nav-logo.png" alt="logo">
+                    <div id="showul"
+                        class="d-flex flex-lg-row flex-column align-items-center gap_68 gap-5 w-100 justify-content-lg-end mobview transition_nav">
+                        <ul class="d-flex flex-lg-row flex-column mb-0 gap_68 gap-5 ps-0 align-items-center">
+                            <li><a class="clr_white fs_18 fw_400 nav_menu underline position-relative" href="#">Home</a>
+                            </li>
+                            <li><a class="clr_white fs_18 fw_400 nav_menu underline position-relative"
+                                    href="#">Fighter</a></li>
+                            <li><a class="clr_white fs_18 fw_400 nav_menu underline position-relative"
+                                    href="#">Roadmap</a></li>
+                            <li><a class="clr_white fs_18 fw_400 nav_menu underline position-relative" href="#">Team</a>
+                            </li>
+                        </ul>
+                        <button class="clr_white fs_18 fw_600 btn_connect br_24"><span class="position-relative">Connect
+                                Wallet</span></button>
+                    </div>
+                    <div class="menuicon" id="shownav" onclick="shownav()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="d-flex align-items-end flex-grow-1  ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-6 col-12 pb-xxl-0 pb-5 mb-5 pt-lg-0 pt-5 ">
+                        <h2 class="fw_700 fs_65 fs_48 fs_lg_48 fs_xl_72 clr_white mb-4 text-center text-sm-start">Non ut
+                            <span class="clr_red">aliquet lacus</span> arcu
+                            aryuv testwf.
+                        </h2>
+                        <p
+                            class="fw_400 fs_lg_20 fs_xl_24 fs_24 clr_white opacity-75 mt-2 mb-4 text-center text-sm-start">
+                            At suspendisse tellus at pretium arcu
+                            turpis. Enim convallis sed tortor faucibus amet ipsum at lacus ultrices. Donec
+                            nibh viverra odio convallis.</p>
+                        <div class="d-flex align-items-center flex-column flex-sm-row gap_40 pt-3">
+                            <button class="btn_connect fs_lg_20 fs_xl_24 fs_24 clr_white fw_600 br_34">Mint Now</button>
+                            <a class="fw_400 fs_lg_20 fs_xl_24 fs_24 clr_white learn_btn" href="#">Learn more</a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-12 position-relative">
+                        <img class="w-100  position-absolute z-0 scale_bg_blue img_bright"
+                            src="./assets/img/png/blue_fire.png" alt="fire">
+                        <img class="w-100  position-absolute z-1 scale_bg_blue img_bright"
+                            src="./assets/img/png/bg_bluefire.png" alt="fire">
+                        <img class=" w-100 position-relative z-2 trans_scale  hero_img chracter_bright opacity_animation1 "
+                            src="./assets/img/png/sec1-men.png" alt="men-img">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            </div>
+        </section>
+
+    </header>
+    <section class="bg-black position-relative">
+        <img class="position-absolute sec2_deco d-sm-block d-none" src="./assets/img/png/sec2_pos_img1.png"
+            alt="decoration">
+        <div class="container minus_mg_top">
+            <div class="bg_blur_box position-relative z-3">
+                <h4 class="fw_700 fs_48 clr_white pb-4 ps_68 mb-0">The Story</h4>
+                <div class="row justify-content-evenly pt-2">
+                    <div class="col-md-5 col-sm-6 col-12" data-aos="fade-right">
+                        <p class="clr_white fw_400 fs_18 mb-0 text-md-start text-center">Neque cras adipiscing id id eu.
+                            Nisl leo donec mattis
+                            leo consectetur at nunc id. Nulla
+                            pharetra dolor sit quis donec
+                            tristique proin. Nulla quis magna tristique nisi eu at morbi. Malesuada lorem commodo
+                            ultrices morbi magna dictum congue
+                            nec.</p>
+                    </div>
+                    <div class="col-md-5 col-sm-6 col-12" data-aos="fade-left">
+                        <p class="clr_white fw_400 fs_18 mb-0 text-md-start text-center">Neque cras adipiscing id id eu.
+                            Nisl leo donec mattis
+                            leo consectetur at nunc id. Nulla
+                            pharetra dolor sit quis
+                            donec
+                            tristique proin. Nulla quis magna tristique nisi eu at morbi. Malesuada lorem commodo
+                            ultrices morbi magna
+                            dictum congue
+                            nec.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="position-relative">
+            <div class="d-flex slider1 center slick-list ">
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img1.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img2.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img3.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img4.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img5.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img7.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img8.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+                <div class="col slick-slide trans_linear py_60 my-5 d-flex flex-column align-items-center">
+                    <img class="w-100" src="./assets/img/png/slider_img9.png" alt="img">
+                    <h1 class="fs_24 fw_600 clr_white pt-4 text-center">Super SolaSaiyan</h1>
+                    <div class="d-flex">
+                        <p class="fs_18 fw_400 clr_white d-none d_block">457/500</p>
+                        <p class="fs_18 fw_400 clr_white d-none d_block">0.04 ETH</p>
+                    </div>
+                    <button class="p_10_24 btn_SLIDER1 FW_600 FS_18 clr_white d-none d_block">Min Now</button>
+                </div>
+
+            </div>
+            <div class="d-md-flex d-none justify-content-between position-absolute z-3 right_top w-100">
+                <div class="layer_slider"></div>
+                <div class="layer_slider1"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-black ">
+        <div class="container py-4 ">
+            <div class="row align-items-xl-center object-fit-cover justify-content-between py-2">
+                <div class="col-md-6 col-12 py-5 position-relative " data-aos="zoom-in">
+                    <img class="w-100 h-100 position-relative z-2" src="./assets/img/png/sec_3_img.png" alt="img">
+                    <img class="position-absolute sec3_layer z-0 w-100 trans_scale1"
+                        src="./assets/img/png/sec_3_img_layer.png" alt="layer">
+                </div>
+                <div class="col-xl-5 col-md-6 col-12" data-aos="zoom-in">
+                    <h3 class="fw_700 fs_48 clr_white lh_66 text-center text-md-start">Ante tempor, <span
+                            class="clr_red">neque scelerisque</span>
+                        sit viverra.</h3>
+                    <p class="fw_400 fs_lg_18 fs_md_14 fs_18 clr_white lh_32 mb-0 neg_margin text-center text-md-start">
+                        Viverra in morbi urna neque sollicitudin
+                        venenatis quam facilisis vivamus. Massa risus placerat lectus at nisl eleifend.
+                        Lorem consectetur diam at ut leo. Id lacus blandit integer suscipit arcu nisl nisl, nunc dictum.
+                        Viverra elit mauris
+                        tempor sit id. Viverra suspendisse lorem semper sit massa in neque scelerisque. Magna orci, id
+                        porttitor eu vitae arcu
+                        est ullamcorper. Tortor, vehicula lectus eu quis a nulla vehicula imperdiet vulputate. Ultricies
+                        malesuada habitasse id
+                        ornare id. Vel diam consequat platea morbi duis. Faucibus egestas nibh libero placerat placerat
+                        fusce nunc, nunc.
+                        Vivamus nibh blandit mattis tellus dui. Pharetra gravida sollicitudin praesent cursus odio enim
+                        risus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black py-5 position-relative">
+        <img class="position-absolute sec4_deco1 d-none d-lg-block" src="./assets/img/png/sec4_pos_img1.png"
+            alt="decoration">
+        <img class="position-absolute sec4_deco2 d-none d-md-block" src="./assets/img/png/sec4_pos_img2.png"
+            alt="decoration">
+        <img class="position-absolute sec4_deco3 d-none d-md-block" src="./assets/img/png/sec5_pos_img1.png"
+            alt="decoration">
+        <div class="container py-5">
+            <div class="timeline ">
+
+                <div class="timeline-box ps-5  right" data-aos="fade-left">
+                    <div class="content ps-5">
+                        <h2 class="fs_36 fw_600 clr_white">Milestone 1</h2>
+                        <p class="fw_400 fs_18 clr_white">Eget aliquam feugiat eget amet sem. Et in hendrerit purus at
+                            accumsan elementum non volutpate.</p>
+                    </div>
+                </div>
+                <div class="timeline-box pe-md-5 ps-5 ps-md-0  left " data-aos="fade-right">
+                    <div class="content pe-md-5 ps-5 ps-md-0">
+                        <h2 class="fs_36 fw_600 clr_white text-md-end">Milestone 1</h2>
+                        <p class="fw_400 fs_18 clr_white text-md-end">Eget aliquam feugiat eget amet sem. Et in
+                            hendrerit purus at
+                            accumsan elementum non volutpate.</p>
+                    </div>
+                </div>
+                <div class="timeline-box ps-5  right" data-aos="fade-left">
+                    <div class="content ps-5">
+                        <h2 class="fs_36 fw_600 clr_white">Milestone 1</h2>
+                        <p class="fw_400 fs_18 clr_white">Eget aliquam feugiat eget amet sem. Et in hendrerit purus at
+                            accumsan elementum non volutpate.</p>>
+                    </div>
+                </div>
+                <div class="timeline-box pe-md-5 ps-5 ps-md-0  left" data-aos="fade-right">
+                    <div class="content pe-md-5 ps-5 ps-md-0">
+                        <h2 class="fs_36 fw_600 clr_white text-md-end">Milestone 1</h2>
+                        <p class="fw_400 fs_18 clr_white text-md-end">Eget aliquam feugiat eget amet sem. Et in
+                            hendrerit purus at
+                            accumsan elementum non volutpate.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="timeline-box ps-5 pb-0  right" data-aos="fade-left">
+                <div class="content ps-5">
+                    <h2 class="fs_36 fw_600 clr_white">Milestone 1</h2>
+                    <p class="fw_400 fs_18 clr_white">Eget aliquam feugiat eget amet sem. Et in hendrerit purus at
+                        accumsan
+                        elementum non volutpate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black overflow-x-hidden ">
+
+        <div class="container py-4 ">
+            <h2 class="fw_700 fs_48 clr_white text-center pb-5">Our Team</h2>
+            <div class="d-flex responsive">
+                <div class=" d-flex flex-column align-items-center  ">
+                    <img class="w-100 " src="./assets/img/png/slider2_img1.png" alt="img">
+                    <h3 class="fw_600 fs_36 clr_white pt-3 text-center ">Member Name</h3>
+                    <h5 class="clr_white fw_400 fs_18 ">Designation</h5>
+                </div>
+                <div class=" d-flex flex-column align-items-center ">
+                    <img class=" w-100 " src="./assets/img/png/slider2_img2.png" alt="img">
+                    <h3 class="fw_600 fs_36 clr_white pt-3 text-center">Member Name</h3>
+                    <h5 class="clr_white fw_400 fs_18 ">Designation</h5>
+                </div>
+                <div class=" d-flex flex-column align-items-center ">
+                    <img class=" w-100 " src="./assets/img/png/slider2_img3.png" alt="img">
+                    <h3 class="fw_600 fs_36 clr_white pt-3 text-center">Member Name</h3>
+                    <h5 class="clr_white fw_400 fs_18 ">Designation</h5>
+                </div>
+                <div class=" d-flex flex-column align-items-center ">
+                    <img class=" w-100 " src="./assets/img/png/slider2_img4.png" alt="img">
+                    <h3 class="fw_600 fs_36 clr_white pt-3 text-center">Member Name</h3>
+                    <h5 class="clr_white fw_400 fs_18 ">Designation</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-black position-relative pt-4">
+        <img class="position-absolute sec6_deco1 d-none d-md-block " src="./assets/img/png/sec6_pos_img1.png"
+            alt="decoration">
+        <img class="position-absolute sec6_deco2 d-none d-sm-block" src="./assets/img/png/sec6_pos_img2.png"
+            alt="decoration">
+        <div class="container py-4 position-relative z-2">
+            <h2 class="fs_48 clr_white fw_700 py-4">FAQ</h2>
+            <div class="accordion pb-5" id="accordionExample">
+                <div class="accordion-item bg_gray" data-aos="fade-left" data-aos-duration="3000">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg_gray" data-aos="fade-right" data-aos-duration="3000">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg_gray" data-aos="fade-left" data-aos-duration="3000">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg_gray" data-aos="fade-right" data-aos-duration="3000">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false"
+                            aria-controls="collapsefour">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg_gray" data-aos="fade-left" data-aos-duration="3000">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false"
+                            aria-controls="collapsefive">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg_gray" data-aos="fade-right">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false"
+                            aria-controls="collapsesix">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg_gray" data-aos="fade-left" data-aos-duration="3000">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button clr_white collapsed bg_gray" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false"
+                            aria-controls="collapseseven">
+                            Laoreet placerat est arcu, integer aliquam.
+                        </button>
+                    </h2>
+                    <div id="collapseseven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body clr_white fs_18 fw_400 opacity-75">
+                            Praesent id sem blandit urna, interdum egestas varius in. Venenatis vel, egestas adipiscing
+                            elementum in. Orci, quis sit
+                            neque enim condimentum egestas eu massa pretium. Mauris varius ultrices leo sapien
+                            elementum, cras morbi porttitor.
+                            Mattis malesuada a, feugiat vitae massa.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-center pt-5 mt-3">
+                <a  href="#"><img class="design_animation" src="./assets/img/png/footer_logo.png" alt="logo"></a>
+                <div class="pt-5">
+                    <a class="me-3 social_logo" href="#"><svg width="64" height="64" viewBox="0 0 64 64" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M55.4752 0.0185547C59.7366 0.0185547 63.1962 3.4783 63.1962 7.7396V55.4937C63.1962 59.7551 59.7365 63.2148 55.4752 63.2148H7.72105C3.45975 63.2148 0 59.7551 0 55.4937V7.7396C0 3.4783 3.45962 0.0185547 7.72105 0.0185547H55.4752V0.0185547ZM24.1329 52.4201C40.9119 52.4201 50.0864 38.5165 50.0864 26.4667C50.0864 26.0695 50.0864 25.6722 50.0675 25.2938C51.8456 24.0076 53.3967 22.3997 54.6264 20.5647C52.9995 21.2836 51.2403 21.7755 49.3865 22.0025C51.2782 20.8674 52.7158 19.0893 53.3968 16.9517C51.6376 17.9921 49.6892 18.7488 47.6084 19.1649C45.9437 17.3868 43.5791 16.2896 40.9498 16.2896C35.9179 16.2896 31.832 20.3756 31.832 25.4074C31.832 26.1263 31.9077 26.8261 32.0779 27.4882C24.4924 27.1099 17.777 23.4779 13.2749 17.9543C12.4993 19.2974 12.0453 20.8674 12.0453 22.5321C12.0453 25.6912 13.6532 28.4908 16.1123 30.1176C14.618 30.0797 13.2181 29.6636 11.9885 28.9826V29.0961C11.9885 33.5226 15.1287 37.1924 19.3093 38.0436C18.5527 38.2517 17.7393 38.3652 16.9068 38.3652C16.3204 38.3652 15.753 38.3084 15.1855 38.1949C16.3394 41.8269 19.7065 44.4562 23.6979 44.5319C20.5767 46.9722 16.6421 48.4287 12.367 48.4287C11.6292 48.4287 10.9104 48.391 10.1915 48.2963C14.1829 50.9068 18.9876 52.4201 24.1329 52.4201Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a class="ms-3 social_logo" href="#"><svg width="60" height="69" viewBox="0 0 60 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M40.0487 32.9269C40.0487 34.9887 38.5279 36.6783 36.6015 36.6783C34.7089 36.6783 33.1542 34.9887 33.1542 32.9269C33.1542 30.8654 34.6752 29.1757 36.6015 29.1757C38.528 29.1757 40.0487 30.8654 40.0487 32.9269ZM24.2659 29.1757C22.3394 29.1757 20.8186 30.8654 20.8186 32.9269C20.8186 34.9887 22.3733 36.6783 24.2659 36.6783C26.1922 36.6783 27.713 34.9887 27.713 32.9269C27.747 30.8654 26.1922 29.1757 24.2659 29.1757ZM59.9547 7.7826V68.413C51.4404 60.8887 54.1635 63.3795 44.2731 54.1849L46.0646 60.437H7.73938C3.92054 60.437 0.811419 57.3281 0.811419 53.4748V7.7826C0.811419 3.92967 3.92054 0.820557 7.73938 0.820557H53.0262C56.8455 0.820557 59.9547 3.92967 59.9547 7.7826ZM50.3226 39.8213C50.3226 28.939 45.4561 20.1181 45.4561 20.1181C40.5896 16.4683 35.9593 16.5697 35.9593 16.5697L35.4862 17.1105C41.2317 18.8677 43.9016 21.4025 43.9016 21.4025C35.8734 17.0025 26.4432 17.0018 18.6557 20.4224C17.405 20.9968 16.6616 21.4025 16.6616 21.4025C16.6616 21.4025 19.4667 18.7326 25.5501 16.9752L25.2122 16.5695C25.2122 16.5695 20.582 16.4683 15.7153 20.118C15.7153 20.118 10.8488 28.9388 10.8488 39.8211C10.8488 39.8211 13.6877 44.7216 21.1564 44.9581C21.1564 44.9581 22.407 43.4375 23.4207 42.1531C19.1286 40.8688 17.5067 38.1654 17.5067 38.1654C18.0038 38.5129 18.8236 38.9644 18.8923 39.01C24.5966 42.2049 32.6996 43.2513 39.9812 40.193C41.164 39.7538 42.4822 39.1115 43.8677 38.199C43.8677 38.199 42.1779 40.9705 37.7505 42.2208C38.7646 43.5049 39.9812 44.9581 39.9812 44.9581C47.4501 44.7217 50.3226 39.8213 50.3226 39.8213Z"
+                            fill="white" />
+                    </svg>
+</a>
+                </div>
+                <div class="py-4 mt-2">
+                    <a class="me-3 fs_18 fw_400 clr_white opacity-75 terms" href="#">Privacy Policy</a>
+                    <a class="ms-3 fs_18 fw_400 clr_white opacity-75 terms" href="#">Terms</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+    <!--L QUERRY MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--SLICK MIN JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        function shownav() {
+            document.getElementById("showul").classList.toggle("nav_left0")
+            document.body.classList.toggle("overflow-hidden")
+        }
+    </script>
+    <script>
+
+        const topbtn = document.getElementById('topbtn');
+
+
+        window.onscroll = function () { topscroll() };
+
+        function topscroll() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                topbtn.style.display = "block";
+            }
+            else {
+                topbtn.style.display = "none";
+            }
+        }
+
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+
+
+    </script>
+    <script>
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: 100,
+            infinite: true,
+            slidesToShow: 5,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            // arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        arrows: false,
+                        infinite: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 765,
+                    settings: {
+                        arrows: false,
+                        infinite: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        arrows: false,
+                        infinite: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
+    <script>
+        $('.responsive').slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            responsive: [
+                {
+                    breakpoint: 1100,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: false,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false
+                    }
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        arrows: false,
+                        infinite: true,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
+    </script>
+</body>
+
+</html>
