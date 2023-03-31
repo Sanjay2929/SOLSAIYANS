@@ -6,6 +6,7 @@
     box-sizing: border-box !important;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -171,15 +172,17 @@
     right: 30px;
     bottom: 30px;
     display: none;
-    fill: transparent;
+    fill: transpare;
 }
 
 .backToTop:hover path {
     stroke: var(--clr-orange);
 }
-.z-10{
+
+.z-10 {
     z-index: 10;
 }
+
 .p_10_24 {
     padding: 10px 24px;
 }
@@ -404,6 +407,7 @@
     bottom: 0;
     left: 50%;
     margin-left: -3px;
+    z-index: 0;
 }
 
 /* timeline-box around content */
@@ -411,6 +415,7 @@
     position: relative;
     width: 50%;
     padding-bottom: 132px;
+    z-index: 3;
 }
 
 /* The circles on the timeline */
@@ -425,7 +430,7 @@
     border: 1px solid #FF9F55;
     top: 0;
     border-radius: 50%;
-    z-index: 1;
+
 }
 
 /* Place the timeline-box to the left */
@@ -498,7 +503,7 @@
         height: 100vh;
         left: -100%;
         padding-left: 0;
-        z-index: 3;
+        z-index: 10;
     }
 
     .transition_nav {
