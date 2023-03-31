@@ -33,8 +33,8 @@
         </svg>
     </button>
     <header class="her_bg_img d-flex  flex-column min-vh-100 z-n1 overflow-hidden">
-        <nav class=" position-relative z-3">
-            <div class="container py-3">
+        <nav class=" position-relative z-3 ">
+            <div class="container py-3  ">
                 <div class="d-flex justify-content-between align-items-center py-4 ">
                     <img class="animate__tada" src="./assets/img/png/nav-logo.png" alt="logo">
                     <div id="showul"
@@ -66,9 +66,11 @@
             <div class="container " id="home">
                 <div class="row">
                     <div class="col-lg-6 col-12 pb-xxl-0 pb-5 mb-5 pt-lg-0 pt-5 ">
-                        <h2 class="fw_700 fs_65 fs_48 fs_lg_48 fs_xl_72 clr_white mb-4 text-center text-sm-start">Non ut
-                            <span class="clr_red">aliquet lacus</span> arcu
-                            aryuv testwf.
+                        <h2 class="fw_700 fs_65 fs_48 fs_lg_48 fs_xl_72 clr_white mb-4 text-center text-sm-start"><span
+                                class="animation_non">Non ut</span>
+                            <span class="clr_red animation_aliquet">aliquet lacus</span> <span
+                                class="animation_arcu">arcu
+                                aryuv testwf.</span>
                         </h2>
                         <p
                             class="fw_400 fs_lg_20 fs_xl_24 fs_24 clr_white opacity-75 mt-2 mb-4 text-center text-sm-start">
@@ -76,19 +78,22 @@
                             turpis. Enim convallis sed tortor faucibus amet ipsum at lacus ultrices. Donec
                             nibh viverra odio convallis.</p>
                         <div class="d-flex align-items-center flex-column flex-sm-row gap_40 pt-3">
-                            <button class="btn_connect fs_lg_20 fs_xl_24 fs_24 clr_white fw_600 br_34">Mint Now</button>
+                            <button class="btn_connect fs_lg_20 fs_xl_24 fs_24 clr_white fw_600 br_34"><span
+                                    class="position-relative">Mint Now</span></button>
                             <a class="fw_400 fs_lg_20 fs_xl_24 fs_24 clr_white learn_btn" href="#">Learn more</a>
                         </div>
                     </div>
 
+                    <div class="col-lg-6 col-12">
+                        <div class=" position-relative">
+                            <img class="w-100  position-absolute z-0 scale_bg_blue img_bright"
+                                src="./assets/img/png/blue_fire.png" alt="fire">
+                            <img class="w-100  position-absolute z-1 scale_bg_blue img_bright"
+                                src="./assets/img/png/bg_bluefire.png" alt="fire">
+                            <img class=" w-100 position-relative z-2 trans_scale  hero_img chracter_bright opacity_animation1 "
+                                src="./assets/img/png/sec1-men.png" alt="men-img">
+                        </div>
 
-                    <div class="col-lg-6 col-12 position-relative">
-                        <img class="w-100  position-absolute z-0 scale_bg_blue img_bright"
-                            src="./assets/img/png/blue_fire.png" alt="fire">
-                        <img class="w-100  position-absolute z-1 scale_bg_blue img_bright"
-                            src="./assets/img/png/bg_bluefire.png" alt="fire">
-                        <img class=" w-100 position-relative z-2 trans_scale  hero_img chracter_bright opacity_animation1 "
-                            src="./assets/img/png/sec1-men.png" alt="men-img">
                     </div>
                 </div>
             </div>
@@ -527,6 +532,9 @@
         }
 
 
+    </script>
+    <script>
+        $('.single-item').slick();
     </script>
     <script>
         $('.center').slick({

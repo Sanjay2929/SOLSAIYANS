@@ -6,7 +6,7 @@
     box-sizing: border-box !important;
     padding: 0;
     margin: 0;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -173,6 +173,7 @@
     bottom: 30px;
     display: none;
     fill: transpare;
+    border-radius: 8px;
 }
 
 .backToTop:hover path {
@@ -284,7 +285,7 @@
 
 .sec3_layer {
     left: 0px;
-    bottom: 0px;
+    bottom: 50px;
     z-index: 0;
 }
 
@@ -540,7 +541,7 @@
     }
 
     .trans_scale1 {
-        scale: 1.7;
+        scale: 1.4;
     }
 
     .fs_65 {
@@ -773,4 +774,113 @@
     }
 
   
-} *
+}  */
+
+.animation_non {
+    animation: ani_1 1s 0.5s ease-out;
+    position: relative;
+}
+
+@keyframes ani_1 {
+    0% {
+        top: -200px;
+        font-size: 10px;
+        left: 200px;
+    }
+
+    60% {
+        top: 0px;
+        font-size: inherit;
+        left: 0;
+    }
+
+    70% {
+        top: 10px;
+        font-size: inherit;
+        left: 0;
+    }
+
+    80% {
+        top: 0px;
+        font-size: inherit;
+        left: 0;
+    }
+
+    90% {
+        top: 10px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+.animation_aliquet {
+    animation: ani_2;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    position: relative;
+}
+
+@keyframes ani_2 {
+    0% {
+        top: -250px;
+
+        opacity: 0%;
+        font-size: 10px;
+        left: 200px;
+    }
+
+    80% {
+        top: 0px;
+
+        opacity: 100%;
+        font-size: inherit;
+        left: 0;
+    }
+}
+
+.animation_arcu {
+    animation: ani_1 1s 0.5s linear;
+    position: relative;
+}
+
+.sec3_layer {
+    animation: sec3-layer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes sec3-layer {
+    0% {
+        filter: hue-rotate(0deg);
+        filter: brightness(.2);
+    }
+
+    20% {
+        filter: hue-rotate(50deg);
+        filter: brightness(.6);
+    }
+
+    40% {
+        filter: hue-rotate(100deg);
+        filter: brightness(.8);
+    }
+
+    60% {
+        filter: hue-rotate(150deg);
+        filter: brightness(1);
+    }
+
+    80% {
+        filter: hue-rotate(200deg);
+        filter: brightness(1.2);
+    }
+
+    100% {
+        filter: hue-rotate(250deg);
+        filter: brightness(1.4);
+    }
+}
