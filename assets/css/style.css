@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-html{
+
+html {
     overflow-x: hidden;
 }
-body{
+
+body {
     overflow-x: hidden;
 }
+
 * {
     text-decoration: none !important;
     list-style-type: none !important;
@@ -75,8 +78,8 @@ body{
 
 .img_bright {
     animation: bright;
-    animation-duration: .5s;
-    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
@@ -84,6 +87,8 @@ body{
 @keyframes bright {
     0% {
         filter: brightness(0.1);
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     20% {
@@ -104,6 +109,8 @@ body{
 
     100% {
         filter: brightness(1.4);
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
 }
@@ -331,11 +338,13 @@ body{
 .learn_btn:hover {
     color: var(--clr-red);
 }
-.btn_connect:active{
-box-shadow: none;
-transform: translateY(10%);
-color: #F4A003;
+
+.btn_connect:active {
+    box-shadow: none;
+    transform: translateY(10%);
+    color: #F4A003;
 }
+
 .btn_connect span {
     cursor: pointer;
     display: inline-block;
@@ -345,6 +354,10 @@ color: #F4A003;
 
 .btn_connect {
     transition: 0.5s;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
 }
 
 .btn_connect span:after {
@@ -538,7 +551,7 @@ color: #F4A003;
         content: '';
         width: 100%;
         height: 5px;
-        border-radius:5px;
+        border-radius: 5px;
         background-color: white;
     }
 
