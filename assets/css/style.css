@@ -331,7 +331,11 @@ body{
 .learn_btn:hover {
     color: var(--clr-red);
 }
-
+.btn_connect:active{
+box-shadow: none;
+transform: translateY(10%);
+color: #F4A003;
+}
 .btn_connect span {
     cursor: pointer;
     display: inline-block;
@@ -349,7 +353,7 @@ body{
     opacity: 0;
     top: 0;
     right: -20px;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .btn_connect:hover span {
